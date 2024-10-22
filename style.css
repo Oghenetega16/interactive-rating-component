@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary Colours */
+    --orange: hsl(25, 97%, 53%);
+
+    /* Neutral Colours */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--very-dark-blue);
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 15px;
+    color: var(--light-grey);
+}
+
+h1 {
+    color: var(--white);
+    margin: 1rem 0;
+}
+
+button {
+    margin: 1.7rem 0 0 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 30px;
+    background-color: var(--orange);
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--white);
+}
+
+#main {
+    background-color: var(--dark-blue);
+    padding: 2rem;
+    width: 390px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+#main img {
+    width: 45px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: hsl(217, 12%, 22%);
+}
+
+#ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: rem;
+}
+
+.text {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.numbers {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50%;
+    background-color: hsl(217, 12%, 23%);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.numbers:hover {
+    background-color: var(--orange);
+    color: var(--very-dark-blue);
+}
+
+.numbers:active {
+    background-color: var(--white);
+    color: var(--very-dark-blue);
+}
+
+#container {
+    width: 390px;
+    background-color: var(--dark-blue);
+    padding: 3rem 1.5rem;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#container h1 {
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.selected {
+    display: grid;
+    place-content: center;
+}
+
+.selection {
+    width: 190px;
+    margin: 1rem 3rem;
+    background-color: hsl(217, 12%, 23%);
+    padding: 8px 0px;
+    border-radius: 30px;
+    color: var(--orange);
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    #main {
+        margin: 0 15px;
+        width: 345px;
+        border-radius: 20px;
+        padding: 1.1rem;
+    }
+
+    #container {
+        margin: 0 15px;
+        width: 345px;
+        border-radius: 20px;
+    }
+
+}
